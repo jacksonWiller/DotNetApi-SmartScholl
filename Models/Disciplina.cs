@@ -4,13 +4,12 @@ namespace SmartSchool.Models
     {
         public Disciplina() { }
 
-        public Disciplina(int id, string nome, int professorId, Professor professor)
+        public Disciplina(int id, string nome, int professorId)
         {
             this.id = id;
             this.nome = nome;
             this.professorId = professorId;
-           
-
+    
         }
         public int id { get; set; }
         public string nome { get; set; }

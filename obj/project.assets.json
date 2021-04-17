@@ -1178,7 +1178,8 @@
       "Microsoft.EntityFrameworkCore >= 5.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.5",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.5",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.5"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.5",
+      "Microsoft.EntityFrameworkCore.analyzers >= 5.0.5"
     ]
   },
   "packageFolders": {
@@ -1233,6 +1234,10 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[5.0.5, )"
+          },
+          "Microsoft.EntityFrameworkCore.analyzers": {
             "target": "Package",
             "version": "[5.0.5, )"
           }
