@@ -1,4 +1,7 @@
+using System.Collections.Generic;
+
 namespace SmartSchool.Models
+
 {
     public class Aluno
     {    
@@ -14,6 +17,7 @@ namespace SmartSchool.Models
         public string nome { get; set; }
         public string sobrenome { get; set; }
         public string telefone { get; set; }
+        public IEnumerable<AlunoDisciplina> AlunosDisciplinas { get; set; }
 
     }
 }

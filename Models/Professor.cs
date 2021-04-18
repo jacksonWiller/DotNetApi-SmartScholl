@@ -13,6 +13,6 @@ namespace SmartSchool.Models
         }
         public int id { get; set; }
         public string nome { get; set; }
-        public IEnumerable<Disciplina> Disciplina { get; set; }
+        public IEnumerable<Disciplina> Disciplinas { get; set; }
     }
 }

@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using SmartSchool.Data;
 
+
 namespace SmartSchool
 {
     public class Startup
@@ -31,6 +32,8 @@ namespace SmartSchool
                 optionsAction: x => x.UseSqlite(Configuration.GetConnectionString("DefaultConn"))
             );
             services.AddControllers();
+            services.AddScoped<IRepository, Repository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
